@@ -1,5 +1,7 @@
 > # 2019.04.18
 
+[TOC]
+
 # Django 보충수업 01
 
 ## 1. 개요
@@ -367,7 +369,7 @@ def __str__(self):
 
 나는 c9이라서 그냥 shell_plus
 
-
+**jupyter[notebook]**
 
 ```shell
 user = User.objects.create(name="싸피")
@@ -399,7 +401,9 @@ Out[8]: <User: User object (1)>
 
 
 
-modles.py
+**query/modles.py**
+
+출력시 이름이 나오도록 함수 추가.
 
 ```python
 class User(TimeStampedModel):
@@ -415,8 +419,6 @@ class User(TimeStampedModel):
 In [1]: User.objects.get(pk=1)
 Out[1]: <User: 싸피>
 ```
-
-
 
 
 
